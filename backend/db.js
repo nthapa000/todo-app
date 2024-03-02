@@ -6,7 +6,7 @@
         completed : boolean
     }
 */
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 // mongodb+srv://admin:KmCihXn0l1podXRj@cluster0.9gr3ic2.mongodb.net/todos
 mongoose.connect("mongodb+srv://admin:KmCihXn0l1podXRj@cluster0.9gr3ic2.mongodb.net/todos")
 // we should put it in env file
@@ -14,7 +14,7 @@ mongoose.connect("mongodb+srv://admin:KmCihXn0l1podXRj@cluster0.9gr3ic2.mongodb.
 const todoSchema = mongoose.Schema({
     title: String,
     description: String,
-    completed: boolean
+    completed: Boolean
 })
 
 const todo = mongoose.model('todos',todoSchema);

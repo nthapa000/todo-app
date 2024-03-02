@@ -1,4 +1,4 @@
-const zod = require("express");
+const zod = require("zod");
 
 // Write Zod schema for this 
 /* 
