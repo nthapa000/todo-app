@@ -75,3 +75,5 @@ app.post("/completed",async function(req,res){
         msg:"Todo marked as completed"
     })
 })
+
+app.listen(3000);
