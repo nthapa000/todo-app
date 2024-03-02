@@ -5,7 +5,13 @@ function App() {
   return (
     <div>
       <CreateTodo></CreateTodo>
-      <Todos></Todos>
+      <Todos todos={[
+        {
+          title:"Go to room",
+          description:"In 15 minutes",
+          completed:false
+        }
+      ]}></Todos>
     </div>
   )
 }
