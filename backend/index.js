@@ -3,6 +3,13 @@
 const express = require("express")
 const {createTodo, updateTodo} = require("./types")
 const {todo} = require("./db")
+const cors = require("cors")
+// anyfrontend can hit it now not only localhost:3000
+// we can restrict
+// app.use(cors({
+//     origin:"http://localhost:5173"
+// }))
+
 // destructuring of object
 
 // we can also do it like this 
@@ -11,7 +18,7 @@ const {todo} = require("./db")
 // const parsePayload = types.createTodo;
 // importing something which has been exported
 const app = express();
-
+app.use(cors())
 app.use(express.json());
 
 
